@@ -15,9 +15,6 @@ permissions:
   contents: read
   statuses: write
 
-env:
-  ATMOS_PROFILE: github 
-
 jobs:
   deploy-preview:
     runs-on: ["ubuntu-latest"]
