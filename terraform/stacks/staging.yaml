@@ -7,6 +7,12 @@ vars:
   stage: staging
   deps_stage: dev
 
+terraform:
+  auth:
+    identities:
+      plat-dev/terraform:
+        default: true
+
 components:
   terraform:
     app:
