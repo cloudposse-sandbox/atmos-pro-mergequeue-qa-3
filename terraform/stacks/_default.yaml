@@ -31,11 +31,16 @@ terraform:
   backend_type: s3
   backend:
     s3:
-      bucket: cplive-plat-ue2-dev-tfstate-apps
+      bucket: atmos-pro-qa3-tfstate
+      dynamodb_table: atmos-pro-qa3-tfstate
+      role_arn: null
       encrypt: true
       key: terraform.tfstate
       acl: bucket-owner-full-control
       region: us-east-2
+  remote_state_backend:
+    s3:
+      role_arn: null
 
   dependencies:
     tools:

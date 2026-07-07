@@ -12,7 +12,7 @@ terraform:
     identities:
       plat-dev/terraform:
         default: true
-  
+
 components:
   terraform:
     app:

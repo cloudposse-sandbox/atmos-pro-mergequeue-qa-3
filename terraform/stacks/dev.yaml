@@ -6,12 +6,12 @@ import:
 vars:
   stage: dev
   deps_stage: dev
-  
+
 terraform:
   auth:
     identities:
       plat-dev/terraform:
-        default: true
+        default: true  
   
 components:
   terraform:
